@@ -1,0 +1,32 @@
+{
+	"name": "boiler__gulp_webpack",
+	"version": "1.0.0",
+	"description": "Project boilerplate using Gulp and Webpack.",
+	"main": "gulpfile.js",
+	"author": "Kris Bastiani",
+	"license": "ISC",
+	"private": false,
+	"scripts": {
+		"build:prod": "NODE_ENV=production gulp build"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-plugin-transform-react-remove-prop-types": "^0.4.9",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-env": "^1.6.0",
+		"babel-preset-react": "^6.24.1",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^4.0.0",
+		"gulp-connect": "^5.0.0",
+		"gulp-imagemin": "^3.3.0",
+		"gulp-pug": "^3.3.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-sass": "^3.1.0",
+		"gulp-uglify": "^3.0.0",
+		"pump": "^1.0.2",
+		"through2": "^2.0.3",
+		"webpack-clear-console": "^1.0.3",
+		"webpack-stream": "^4.0.0"
+	}
+}

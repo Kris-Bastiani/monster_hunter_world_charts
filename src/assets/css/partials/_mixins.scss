@@ -1,0 +1,26 @@
+// ================================================== UTILITIES
+
+@mixin clearfix {
+	&::before,
+	&::after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}
+
+@mixin clearfix_top {
+	&::before {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}
+
+@mixin clearfix_btm {
+	&::after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}
