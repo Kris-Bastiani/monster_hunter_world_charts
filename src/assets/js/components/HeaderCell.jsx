@@ -1,6 +1,6 @@
 import React from 'react';
 
-module.exports = class HeaderCell extends React.Component {
+export default class HeaderCell extends React.Component {
 	constructor(props) {
 		super(props);
 	}
@@ -13,3 +13,7 @@ module.exports = class HeaderCell extends React.Component {
 		);
 	}
 }
+
+HeaderCell.defaultProps = {
+	scope: 'col'
+};
