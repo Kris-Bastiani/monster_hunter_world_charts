@@ -1,7 +1,8 @@
-const monsters = {
-	'Anjanath': {
-		'chron': 6,
-		'weaknesses': {
+module.exports = [
+	{
+		name: 'Anjanath',
+		chron: 6,
+		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
 			'Thunder':   2,
@@ -14,33 +15,42 @@ const monsters = {
 			'Stun':      2
 		}
 	},
-	'Azure Rathalos': {
-		'chron': 22
+	{
+		name: 'Azure Rathalos',
+		chron: 22
 	},
-	'Barroth': {
-		'chron': 3
+	{
+		name: 'Barroth',
+		chron: 3
 	},
-	'Barroth (Mud)': {
-		'chron': 3
+	{
+		name: 'Barroth (Mud)',
+		chron: 3
 	},
-	'Bazelgeuse': {
-		'chron': 19
+	{
+		name: 'Bazelgeuse',
+		chron: 19
 	},
-	'Black Diablos': {
-		'chron': 23
+	{
+		name: 'Black Diablos',
+		chron: 23
 	},
-	'Diablos': {
-		'chron': 15
+	{
+		name: 'Diablos',
+		chron: 15
 	},
-	'Dodogama': {
-		'chron': 17
+	{
+		name: 'Dodogama',
+		chron: 17
 	},
-	'Great Girros': {
-		'chron': 10
+	{
+		name: 'Great Girros',
+		chron: 10
 	},
-	'Great Jagras': {
-		'chron': 0,
-		'weaknesses': {
+	{
+		name: 'Great Jagras',
+		chron: 0,
+		weaknesses: {
 			'Fire':      3,
 			'Water':     0,
 			'Thunder':   2,
@@ -53,73 +63,96 @@ const monsters = {
 			'Stun':      3
 		}
 	},
-	'Jyuratodus': {
-		'chron': 4
+	{
+		name: 'Jyuratodus',
+		chron: 4
 	},
-	'Jyuratodus (Mud)': {
-		'chron': 4
+	{
+		name: 'Jyuratodus (Mud)',
+		chron: 4
 	},
-	'Kirin': {
-		'chron': 28
+	{
+		name: 'Kirin',
+		chron: 28
 	},
-	'Kulu-Ya-Ku': {
-		'chron': 1
+	{
+		name: 'Kulu-Ya-Ku',
+		chron: 1
 	},
-	'Kushala Daora': {
-		'chron': 26
+	{
+		name: 'Kushala Daora',
+		chron: 26
 	},
-	'Lavasioth': {
-		'chron': 20
+	{
+		name: 'Lavasioth',
+		chron: 20
 	},
-	'Lavasioth (Hard)': {
-		'chron': 20
+	{
+		name: 'Lavasioth (Hard)',
+		chron: 20
 	},
-	'Legiana': {
-		'chron': 12
+	{
+		name: 'Legiana',
+		chron: 12
 	},
-	'Nergigante': {
-		'chron': 24
+	{
+		name: 'Nergigante',
+		chron: 24
 	},
-	'Odogaron': {
-		'chron': 13
+	{
+		name: 'Odogaron',
+		chron: 13
 	},
-	'Paolumu': {
-		'chron': 9
+	{
+		name: 'Paolumu',
+		chron: 9
 	},
-	'Pink Rathian': {
-		'chron': 18
+	{
+		name: 'Pink Rathian',
+		chron: 18
 	},
-	'Pukei-Pukei': {
-		'chron': 2
+	{
+		name: 'Pukei-Pukei',
+		chron: 2
 	},
-	'Radobaan': {
-		'chron': 11
+	{
+		name: 'Radobaan',
+		chron: 11
 	},
-	'Rathalos': {
-		'chron': 14
+	{
+		name: 'Rathalos',
+		chron: 14
 	},
-	'Rathian': {
-		'chron': 7
+	{
+		name: 'Rathian',
+		chron: 7
 	},
-	'Teostra': {
-		'chron': 25
+	{
+		name: 'Teostra',
+		chron: 25
 	},
-	'Tobi-Kadachi': {
-		'chron': 5
+	{
+		name: 'Tobi-Kadachi',
+		chron: 5
 	},
-	'Tzitzi-Ya-Ku': {
-		'chron': 8
+	{
+		name: 'Tzitzi-Ya-Ku',
+		chron: 8
 	},
-	'Uragaan': {
-		'chron': 21
+	{
+		name: 'Uragaan',
+		chron: 21
 	},
-	'Vaal Hazak': {
-		'chron': 27
+	{
+		name: 'Vaal Hazak',
+		chron: 27
 	},
-	'Xeno\'jiiva': {
-		'chron': 29
+	{
+		name: 'Xeno\'jiiva',
+		chron: 29
 	},
-	'Zorah Magdaros': {
-		'chron': 16
+	{
+		name: 'Zorah Magdaros',
+		chron: 16
 	}
-}
+];
