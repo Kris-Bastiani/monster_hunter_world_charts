@@ -17,7 +17,7 @@ const loaders = [
 
 const config = {
 	entry: {
-		app: ['babel-polyfill', path.join(path_js, 'app.js')]
+		app: ['babel-polyfill', path.join(path_js, 'app.jsx')]
 	},
 	output: {
 		filename: path.join('assets', 'js', '[name].js'),
