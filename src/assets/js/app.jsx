@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TableBody from './components/TableBody.jsx';
-import TableHeader from './components/TableHeader.jsx';
+import Table from './components/Table.jsx';
 import monsters from './data/monsters';
 
 const elements = Object.keys(monsters[0].weaknesses);
 
 ReactDOM.render(
-	(<table>
-		<TableHeader title='Monster' values={elements} />
-		<TableBody rows={monsters} />
-	</table>),
+	(
+		<Table
+			headerTitle='Monsters'
+			headerValues={elements}
+			rows={monsters}
+		/>
+	),
 	document.getElementById('app')
 );
