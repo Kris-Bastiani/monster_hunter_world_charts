@@ -2,16 +2,15 @@
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
-const gulp = require('gulp'),
-	autoprefixer = require('gulp-autoprefixer'),
+const autoprefixer = require('gulp-autoprefixer'),
 	connect = require('gulp-connect'),
+	gulp = require('gulp'),
 	imagemin = require('gulp-imagemin'),
 	pug = require('gulp-pug'),
 	pump = require('pump'),
 	rename = require('gulp-rename'),
 	sass = require('gulp-sass'),
 	through2 = require('through2'),
-	uglify = require('gulp-uglify'),
 	webpack = require('webpack-stream'),
 	webpackConfig = require('./webpack.config.js');
 
@@ -80,7 +79,6 @@ gulp.task('webpack', cb => {
 	pump([
 		gulp.src('./src/assets/js/**/app.js'),
 		webpack(webpackConfig),
-		NODE_ENV === 'production' ? uglify({ mangle: false }) : through2.obj(),
 		gulp.dest('./dist'),
 		connect.reload()
 	], cb);
