@@ -1,7 +1,7 @@
-const webpack = require('webpack'),
-	WebpackClearConsole = require('webpack-clear-console').WebpackClearConsole,
-	path = require('path'),
-	path_js = path.resolve(__dirname, 'src', 'assets', 'js');
+const path = require('path'),
+	path_js = path.resolve(__dirname, 'src', 'assets', 'js'),
+	UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
+	webpack = require('webpack');
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
@@ -13,6 +13,17 @@ const loaders = [
 			cacheDirectory: true
 		}
 	}
+];
+
+const plugins = [
+	new UglifyJsPlugin({
+		uglifyOptions: {
+			compress: {
+				pure_funcs: ['console.log']
+			},
+			mangle: false
+		}
+	})
 ];
 
 const config = {
@@ -32,7 +43,7 @@ const config = {
 			}
 		]
 	},
-	plugins: []
+	plugins: NODE_ENV === 'production' ? plugins : []
 };
 
 module.exports = config;
