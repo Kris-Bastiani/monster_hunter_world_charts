@@ -11,8 +11,9 @@ const autoprefixer = require('gulp-autoprefixer'),
 	rename = require('gulp-rename'),
 	sass = require('gulp-sass'),
 	through2 = require('through2'),
-	webpack = require('webpack-stream'),
-	webpackConfig = require('./webpack.config.js');
+	webpack = require('webpack'),
+	webpackConfig = require('./webpack.config.js'),
+	webpackStream = require('webpack-stream');
 
 const pug_locals = {
 	$meta: {
@@ -78,7 +79,7 @@ gulp.task('sass', cb => {
 gulp.task('webpack', cb => {
 	pump([
 		gulp.src('./src/assets/js/**/app.js'),
-		webpack(webpackConfig),
+		webpackStream(webpackConfig, webpack),
 		gulp.dest('./dist'),
 		connect.reload()
 	], cb);
