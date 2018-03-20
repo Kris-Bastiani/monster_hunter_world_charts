@@ -8,14 +8,21 @@ export default class TableHeader extends React.Component {
 
 	render() {
 		const values = Object.keys(this.props.values);
+		let cells;
+
+		if (this.props.summary) {
+			cells = <HeaderCell value={this.props.summary} />
+		} else {
+			cells = values.map(value => {
+				return <HeaderCell key={value} value={this.props.values[value]} />
+			});
+		}
 
 		return (
 			<thead>
 				<tr>
 					<HeaderCell scope='row' value={this.props.title} />
-					{values.map(value => {
-						return <HeaderCell key={value} value={this.props.values[value]} />
-					})}
+					{cells}
 				</tr>
 			</thead>
 		);

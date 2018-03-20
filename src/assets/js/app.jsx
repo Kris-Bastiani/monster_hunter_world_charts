@@ -10,6 +10,7 @@ ReactDOM.render(
 		<Table
 			headerTitle='Monsters'
 			headerValues={elements}
+			headerSummary='Weaknesses'
 			rows={monsters}
 		/>
 	),
