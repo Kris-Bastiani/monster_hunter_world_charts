@@ -9,13 +9,20 @@ export default class Row extends React.Component {
 
 	render() {
 		const values = Object.keys(this.props.values);
+		let cells;
+
+		if (this.props.summary) {
+			cells = <Cell title={this.props.header} value='testme' />
+		} else {
+			cells = values.map(value => {
+				return <Cell key={value} title={value} value={this.props.values[value]} />
+			})
+		}
 
 		return (
 			<tr>
 				<HeaderCell scope='row' value={this.props.header} />
-				{values.map(value => {
-					return <Cell key={value} title={value} value={this.props.values[value]} />
-				})}
+				{cells}
 			</tr>
 		);
 	}

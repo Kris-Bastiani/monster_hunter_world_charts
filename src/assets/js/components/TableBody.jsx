@@ -10,7 +10,14 @@ export default class TableBody extends React.Component {
 		return (
 			<tbody>
 				{this.props.rows.map(row => {
-					return <Row key={row.name} header={row.name} values={row.weaknesses} />
+					return (
+						<Row
+							key={row.name}
+							header={row.name}
+							values={row.weaknesses}
+							summary={this.props.summary}
+						/>
+					);
 				})}
 			</tbody>
 		);
