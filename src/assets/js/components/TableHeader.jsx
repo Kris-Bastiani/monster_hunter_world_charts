@@ -21,7 +21,7 @@ export default class TableHeader extends React.Component {
 		return (
 			<thead>
 				<tr>
-					<HeaderCell scope='row' value={this.props.title} />
+					<HeaderCell scope='col' value={this.props.title} />
 					{cells}
 				</tr>
 			</thead>
