@@ -18,7 +18,10 @@ export default class Row extends React.Component {
 
 		summary.forEach((value, index) => {
 			markup.push(
-				<p>{value.join(', ')}</p>
+				<p>
+					<span>{index}: </span>
+					{value.join(', ')}
+				</p>
 			);
 		});
 
