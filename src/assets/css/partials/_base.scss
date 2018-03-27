@@ -14,4 +14,11 @@ th,
 td {
 	border: 1px solid $clr__black;
 	padding: 0.25em;
+	text-align: center;
+}
+
+th {
+	&[scope=row] {
+		text-align: right;
+	}
 }
