@@ -8,17 +8,24 @@ table {
 th,
 td {
 	border: 1px solid $clr__black;
-	padding: 0.25em;
 }
 
 th {
+	padding: 0.25em;
+
 	&[scope=row] {
 		text-align: right;
 	}
 }
 
 td {
+	p {
+		margin: 0;
+		padding: 0.5em;
+	}
+
 	@media (min-width: 620px) {
+		padding: 0.25em;
 		text-align: center;
 	}
 }
