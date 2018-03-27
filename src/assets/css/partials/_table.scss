@@ -1,0 +1,19 @@
+table {
+	margin: 1em auto;
+	border-collapse: collapse;
+	table-layout: fixed;
+	font: normal 0.875em/1.4 $fnt__body;
+}
+
+th,
+td {
+	border: 1px solid $clr__black;
+	padding: 0.25em;
+	text-align: center;
+}
+
+th {
+	&[scope=row] {
+		text-align: right;
+	}
+}
