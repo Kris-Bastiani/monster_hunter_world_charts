@@ -17,35 +17,131 @@ module.exports = [
 	},
 	{
 		name: 'Azure Rathalos',
-		chron: 22
+		chron: 22,
+		weaknesses: {
+			'Fire':      0,
+			'Water':     1,
+			'Thunder':   1,
+			'Ice':       2,
+			'Dragon':    3,
+			'Poison':    1,
+			'Sleep':     2,
+			'Paralysis': 2,
+			'Blast':     1,
+			'Stun':      2
+		}
 	},
 	{
 		name: 'Barroth',
-		chron: 3
+		chron: 3,
+		weaknesses: {
+			'Fire':      3,
+			'Water':     0,
+			'Thunder':   0,
+			'Ice':       2,
+			'Dragon':    1,
+			'Poison':    3,
+			'Sleep':     2,
+			'Paralysis': 3,
+			'Blast':     3,
+			'Stun':      1
+		}
 	},
 	{
 		name: 'Barroth (Mud)',
-		chron: 3
+		chron: 3,
+		weaknesses: {
+			'Fire':      0,
+			'Water':     3,
+			'Thunder':   0,
+			'Ice':       2,
+			'Dragon':    1,
+			'Poison':    3,
+			'Sleep':     2,
+			'Paralysis': 3,
+			'Blast':     3,
+			'Stun':      1
+		}
 	},
 	{
 		name: 'Bazelgeuse',
-		chron: 19
+		chron: 19,
+		weaknesses: {
+			'Fire':      0,
+			'Water':     1,
+			'Thunder':   3,
+			'Ice':       2,
+			'Dragon':    2,
+			'Poison':    2,
+			'Sleep':     2,
+			'Paralysis': 2,
+			'Blast':     1,
+			'Stun':      1
+		}
 	},
 	{
 		name: 'Black Diablos',
-		chron: 23
+		chron: 23,
+		weaknesses: {
+			'Fire':      0,
+			'Water':     2,
+			'Thunder':   1,
+			'Ice':       3,
+			'Dragon':    0,
+			'Poison':    2,
+			'Sleep':     2,
+			'Paralysis': 3,
+			'Blast':     2,
+			'Stun':      1
+		}
 	},
 	{
 		name: 'Diablos',
-		chron: 15
+		chron: 15,
+		weaknesses: {
+			'Fire':      0,
+			'Water':     2,
+			'Thunder':   1,
+			'Ice':       3,
+			'Dragon':    2,
+			'Poison':    2,
+			'Sleep':     2,
+			'Paralysis': 3,
+			'Blast':     2,
+			'Stun':      1
+		}
 	},
 	{
 		name: 'Dodogama',
-		chron: 17
+		chron: 17,
+		weaknesses: {
+			'Fire':      0,
+			'Water':     2,
+			'Thunder':   3,
+			'Ice':       2,
+			'Dragon':    1,
+			'Poison':    3,
+			'Sleep':     2,
+			'Paralysis': 2,
+			'Blast':     1,
+			'Stun':      2
+		}
 	},
 	{
 		name: 'Great Girros',
-		chron: 10
+		chron: 10,
+		weaknesses: {
+			'Fire':      2,
+			'Water':     3,
+			'Thunder':   0,
+			'Ice':       2,
+			'Dragon':    1,
+			'Poison':    2,
+			'Sleep':     3,
+			'Paralysis': 1,
+			'Blast':     2,
+			'Stun':      2
+		}
 	},
 	{
 		name: 'Great Jagras',
@@ -65,19 +161,67 @@ module.exports = [
 	},
 	{
 		name: 'Jyuratodus',
-		chron: 4
+		chron: 4,
+		weaknesses: {
+			'Fire':      1,
+			'Water':     0,
+			'Thunder':   3,
+			'Ice':       1,
+			'Dragon':    1,
+			'Poison':    2,
+			'Sleep':     1,
+			'Paralysis': 2,
+			'Blast':     1,
+			'Stun':      3
+		}
 	},
 	{
 		name: 'Jyuratodus (Mud)',
-		chron: 4
+		chron: 4,
+		weaknesses: {
+			'Fire':      0,
+			'Water':     3,
+			'Thunder':   0,
+			'Ice':       1,
+			'Dragon':    1,
+			'Poison':    2,
+			'Sleep':     1,
+			'Paralysis': 2,
+			'Blast':     1,
+			'Stun':      3
+		}
 	},
 	{
 		name: 'Kirin',
-		chron: 28
+		chron: 28,
+		weaknesses: {
+			'Fire':      3,
+			'Water':     2,
+			'Thunder':   0,
+			'Ice':       2,
+			'Dragon':    1,
+			'Poison':    1,
+			'Sleep':     2,
+			'Paralysis': 0,
+			'Blast':     2,
+			'Stun':      1
+		}
 	},
 	{
 		name: 'Kulu-Ya-Ku',
-		chron: 1
+		chron: 1,
+		weaknesses: {
+			'Fire':      2,
+			'Water':     3,
+			'Thunder':   2,
+			'Ice':       2,
+			'Dragon':    2,
+			'Poison':    2,
+			'Sleep':     2,
+			'Paralysis': 2,
+			'Blast':     2,
+			'Stun':      2
+		}
 	},
 	{
 		name: 'Kushala Daora',
