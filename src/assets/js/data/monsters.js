@@ -96,6 +96,21 @@ module.exports = [
 		}
 	},
 	{
+		name: 'Deviljho',
+		weaknesses: {
+			'Fire':      2,
+			'Water':     2,
+			'Thunder':   3,
+			'Ice':       1,
+			'Dragon':    3,
+			'Poison':    2,
+			'Sleep':     2,
+			'Paralysis': 2,
+			'Blast':     2,
+			'Stun':      2
+		}
+	},
+	{
 		name: 'Diablos',
 		chron: 15,
 		weaknesses: {
