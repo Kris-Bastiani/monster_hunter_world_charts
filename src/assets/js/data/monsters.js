@@ -1,7 +1,7 @@
 module.exports = [
 	{
 		name: 'Anjanath',
-		chron: 6,
+		fieldGuide: 6,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
@@ -17,7 +17,7 @@ module.exports = [
 	},
 	{
 		name: 'Azure Rathalos',
-		chron: 22,
+		fieldGuide: 23,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     1,
@@ -33,7 +33,7 @@ module.exports = [
 	},
 	{
 		name: 'Barroth',
-		chron: 3,
+		fieldGuide: 3,
 		weaknesses: {
 			'Fire':      3,
 			'Water':     0,
@@ -49,7 +49,7 @@ module.exports = [
 	},
 	{
 		name: 'Barroth (Mud)',
-		chron: 3,
+		fieldGuide: 3,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
@@ -65,7 +65,7 @@ module.exports = [
 	},
 	{
 		name: 'Bazelgeuse',
-		chron: 19,
+		fieldGuide: 20,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     1,
@@ -81,7 +81,7 @@ module.exports = [
 	},
 	{
 		name: 'Black Diablos',
-		chron: 23,
+		fieldGuide: 24,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     2,
@@ -112,7 +112,7 @@ module.exports = [
 	},
 	{
 		name: 'Diablos',
-		chron: 15,
+		fieldGuide: 15,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     2,
@@ -128,7 +128,7 @@ module.exports = [
 	},
 	{
 		name: 'Dodogama',
-		chron: 17,
+		fieldGuide: 18,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     2,
@@ -144,7 +144,7 @@ module.exports = [
 	},
 	{
 		name: 'Great Girros',
-		chron: 10,
+		fieldGuide: 10,
 		weaknesses: {
 			'Fire':      2,
 			'Water':     3,
@@ -160,7 +160,7 @@ module.exports = [
 	},
 	{
 		name: 'Great Jagras',
-		chron: 0,
+		fieldGuide: 0,
 		weaknesses: {
 			'Fire':      3,
 			'Water':     0,
@@ -176,7 +176,7 @@ module.exports = [
 	},
 	{
 		name: 'Jyuratodus',
-		chron: 4,
+		fieldGuide: 4,
 		weaknesses: {
 			'Fire':      1,
 			'Water':     0,
@@ -192,7 +192,7 @@ module.exports = [
 	},
 	{
 		name: 'Jyuratodus (Mud)',
-		chron: 4,
+		fieldGuide: 4,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
@@ -208,7 +208,7 @@ module.exports = [
 	},
 	{
 		name: 'Kirin',
-		chron: 28,
+		fieldGuide: 16,
 		weaknesses: {
 			'Fire':      3,
 			'Water':     2,
@@ -224,7 +224,7 @@ module.exports = [
 	},
 	{
 		name: 'Kulu-Ya-Ku',
-		chron: 1,
+		fieldGuide: 1,
 		weaknesses: {
 			'Fire':      2,
 			'Water':     3,
@@ -240,7 +240,7 @@ module.exports = [
 	},
 	{
 		name: 'Kushala Daora',
-		chron: 26,
+		fieldGuide: 27,
 		weaknesses: {
 			'Fire':      1,
 			'Water':     0,
@@ -256,7 +256,7 @@ module.exports = [
 	},
 	{
 		name: 'Lavasioth',
-		chron: 20,
+		fieldGuide: 21,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
@@ -272,7 +272,7 @@ module.exports = [
 	},
 	{
 		name: 'Lavasioth (Hard)',
-		chron: 20,
+		fieldGuide: 21,
 		weaknesses: {
 			'Fire':      1,
 			'Water':     2,
@@ -288,7 +288,7 @@ module.exports = [
 	},
 	{
 		name: 'Legiana',
-		chron: 12,
+		fieldGuide: 12,
 		weaknesses: {
 			'Fire':      2,
 			'Water':     1,
@@ -304,7 +304,7 @@ module.exports = [
 	},
 	{
 		name: 'Nergigante',
-		chron: 24,
+		fieldGuide: 25,
 		weaknesses: {
 			'Fire':      1,
 			'Water':     1,
@@ -320,7 +320,7 @@ module.exports = [
 	},
 	{
 		name: 'Odogaron',
-		chron: 13,
+		fieldGuide: 13,
 		weaknesses: {
 			'Fire':      1,
 			'Water':     1,
@@ -336,7 +336,7 @@ module.exports = [
 	},
 	{
 		name: 'Paolumu',
-		chron: 9,
+		fieldGuide: 9,
 		weaknesses: {
 			'Fire':      3,
 			'Water':     0,
@@ -352,7 +352,7 @@ module.exports = [
 	},
 	{
 		name: 'Pink Rathian',
-		chron: 18,
+		fieldGuide: 19,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     1,
@@ -368,7 +368,7 @@ module.exports = [
 	},
 	{
 		name: 'Pukei-Pukei',
-		chron: 2,
+		fieldGuide: 2,
 		weaknesses: {
 			'Fire':      2,
 			'Water':     0,
@@ -384,7 +384,7 @@ module.exports = [
 	},
 	{
 		name: 'Radobaan',
-		chron: 11,
+		fieldGuide: 11,
 		weaknesses: {
 			'Fire':      1,
 			'Water':     1,
@@ -400,7 +400,7 @@ module.exports = [
 	},
 	{
 		name: 'Rathalos',
-		chron: 14,
+		fieldGuide: 14,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     1,
@@ -416,7 +416,7 @@ module.exports = [
 	},
 	{
 		name: 'Rathian',
-		chron: 7,
+		fieldGuide: 7,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     1,
@@ -432,7 +432,7 @@ module.exports = [
 	},
 	{
 		name: 'Teostra',
-		chron: 25,
+		fieldGuide: 26,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
@@ -448,7 +448,7 @@ module.exports = [
 	},
 	{
 		name: 'Tobi-Kadachi',
-		chron: 5,
+		fieldGuide: 5,
 		weaknesses: {
 			'Fire':      2,
 			'Water':     3,
@@ -464,7 +464,7 @@ module.exports = [
 	},
 	{
 		name: 'Tzitzi-Ya-Ku',
-		chron: 8,
+		fieldGuide: 8,
 		weaknesses: {
 			'Fire':      2,
 			'Water':     2,
@@ -480,7 +480,7 @@ module.exports = [
 	},
 	{
 		name: 'Uragaan',
-		chron: 21,
+		fieldGuide: 22,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
@@ -496,7 +496,7 @@ module.exports = [
 	},
 	{
 		name: 'Vaal Hazak',
-		chron: 27,
+		fieldGuide: 28,
 		weaknesses: {
 			'Fire':      3,
 			'Water':     0,
@@ -512,7 +512,7 @@ module.exports = [
 	},
 	{
 		name: 'Xeno\'jiiva',
-		chron: 29,
+		fieldGuide: 29,
 		weaknesses: {
 			'Fire':      2,
 			'Water':     2,
@@ -528,7 +528,7 @@ module.exports = [
 	},
 	{
 		name: 'Zorah Magdaros',
-		chron: 16,
+		fieldGuide: 17,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
