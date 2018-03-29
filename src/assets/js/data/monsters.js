@@ -17,7 +17,7 @@ module.exports = [
 	},
 	{
 		name: 'Azure Rathalos',
-		fieldGuide: 23,
+		fieldGuide: 24,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     1,
@@ -81,7 +81,7 @@ module.exports = [
 	},
 	{
 		name: 'Black Diablos',
-		fieldGuide: 24,
+		fieldGuide: 25,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     2,
@@ -97,6 +97,7 @@ module.exports = [
 	},
 	{
 		name: 'Deviljho',
+		fieldGuide: 21,
 		weaknesses: {
 			'Fire':      2,
 			'Water':     2,
@@ -240,7 +241,7 @@ module.exports = [
 	},
 	{
 		name: 'Kushala Daora',
-		fieldGuide: 27,
+		fieldGuide: 28,
 		weaknesses: {
 			'Fire':      1,
 			'Water':     0,
@@ -256,7 +257,7 @@ module.exports = [
 	},
 	{
 		name: 'Lavasioth',
-		fieldGuide: 21,
+		fieldGuide: 22,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
@@ -272,7 +273,7 @@ module.exports = [
 	},
 	{
 		name: 'Lavasioth (Hard)',
-		fieldGuide: 21,
+		fieldGuide: 22,
 		weaknesses: {
 			'Fire':      1,
 			'Water':     2,
@@ -304,7 +305,7 @@ module.exports = [
 	},
 	{
 		name: 'Nergigante',
-		fieldGuide: 25,
+		fieldGuide: 26,
 		weaknesses: {
 			'Fire':      1,
 			'Water':     1,
@@ -432,7 +433,7 @@ module.exports = [
 	},
 	{
 		name: 'Teostra',
-		fieldGuide: 26,
+		fieldGuide: 27,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
@@ -480,7 +481,7 @@ module.exports = [
 	},
 	{
 		name: 'Uragaan',
-		fieldGuide: 22,
+		fieldGuide: 23,
 		weaknesses: {
 			'Fire':      0,
 			'Water':     3,
@@ -496,7 +497,7 @@ module.exports = [
 	},
 	{
 		name: 'Vaal Hazak',
-		fieldGuide: 28,
+		fieldGuide: 29,
 		weaknesses: {
 			'Fire':      3,
 			'Water':     0,
@@ -512,7 +513,7 @@ module.exports = [
 	},
 	{
 		name: 'Xeno\'jiiva',
-		fieldGuide: 29,
+		fieldGuide: 30,
 		weaknesses: {
 			'Fire':      2,
 			'Water':     2,
