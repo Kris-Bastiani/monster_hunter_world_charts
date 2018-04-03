@@ -36,7 +36,7 @@ export default class Row extends React.Component {
 		} else {
 			cells = values.map(value => {
 				return <Cell
-					key={value}
+					key={this.props.header + '_' + value}
 					title={value}
 					value={this.props.values[value]}
 					className={'rating_' + this.props.values[value]}
