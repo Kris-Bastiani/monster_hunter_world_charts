@@ -36,8 +36,7 @@ export default class Table extends React.Component {
 		return (
 			<table>
 				<TableHeader
-					title={this.props.tableHeaderProps.title}
-					values={this.props.tableHeaderProps.values}
+					{...this.props.tableHeaderProps}
 					summary={
 						this.state.w < 620
 							? this.props.tableHeaderProps.summary
@@ -45,7 +44,7 @@ export default class Table extends React.Component {
 					}
 				/>
 				<TableBody
-					rows={this.props.tableBodyProps.rows}
+					{...this.props.tableBodyProps}
 					summary={this.state.w < 620}
 				/>
 			</table>
