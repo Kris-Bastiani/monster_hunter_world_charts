@@ -12,6 +12,7 @@ td {
 
 th {
 	padding: 0.25em;
+	font: 900 1em/1.2 $fnt__heading;
 
 	&[scope=row] {
 		text-align: right;
