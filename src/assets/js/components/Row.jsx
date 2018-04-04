@@ -18,7 +18,11 @@ export default class Row extends React.Component {
 
 		summary.forEach((value, index) => {
 			markup.push(
-				<p className={'rating_' + index} aria-label={'Rating: ' + index}>
+				<p
+					key={this.props.header + '_' + index}
+					className={'rating_' + index}
+					aria-label={'Rating: ' + index}
+				>
 					{value.join(', ')}
 				</p>
 			);
@@ -32,7 +36,12 @@ export default class Row extends React.Component {
 		let cells;
 
 		if (this.props.summary) {
-			cells = <Cell title={this.props.header} value={this.summariseValues(this.props.values)} />
+			cells = (
+				<Cell
+					title={this.props.header}
+					value={this.summariseValues(this.props.values)}
+				/>
+			);
 		} else {
 			cells = values.map(value => {
 				return <Cell
