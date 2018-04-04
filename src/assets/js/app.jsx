@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Table from './components/Table.jsx';
+import Container from './components/Container.jsx';
 import monsters from './data/monsters';
 
 const tableHeaderProps = {
@@ -15,12 +15,10 @@ const tableBodyProps = {
 
 ReactDOM.render(
 	(
-		<React.Fragment>
-			<Table
-				tableHeaderProps={tableHeaderProps}
-				tableBodyProps={tableBodyProps}
-			/>
-		</React.Fragment>
+		<Container
+			tableHeaderProps={tableHeaderProps}
+			tableBodyProps={tableBodyProps}
+		/>
 	),
 	document.getElementById('app')
 );

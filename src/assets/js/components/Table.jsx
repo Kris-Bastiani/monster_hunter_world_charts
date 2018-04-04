@@ -1,35 +1,10 @@
 import React from 'react';
 import TableBody from './TableBody.jsx';
 import TableHeader from './TableHeader.jsx';
-import throttle from '../services/throttle';
 
 export default class Table extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			w: window.innerWidth
-		};
-		this.checkWidth = this.checkWidth.bind(this);
-	}
-
-	checkWidth(e) {
-		const cb = e => {
-			this.setState({ w: window.innerWidth });
-		};
-
-		return throttle(cb(e), 300);
-	}
-
-	componentDidMount() {
-		window.addEventListener('resize', e => {
-			this.checkWidth(e);
-		});
-	}
-
-	componentWillUnmount() {
-		window.removeEventListener('resize', e => {
-			this.checkWidth(e);
-		});
 	}
 
 	render() {
@@ -38,14 +13,14 @@ export default class Table extends React.Component {
 				<TableHeader
 					{...this.props.tableHeaderProps}
 					summary={
-						this.state.w < 620
+						this.props.w < 620
 							? this.props.tableHeaderProps.summary
 							: null
 					}
 				/>
 				<TableBody
 					{...this.props.tableBodyProps}
-					summary={this.state.w < 620}
+					summary={this.props.w < 620}
 				/>
 			</table>
 		);
