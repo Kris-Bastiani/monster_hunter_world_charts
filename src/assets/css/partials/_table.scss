@@ -7,7 +7,9 @@ table {
 
 td,
 th {
-	border: 1px solid $clr__black;
+	&:first-child {
+		border-right: 1px solid $clr__black;
+	}
 }
 
 td {
@@ -17,16 +19,20 @@ td {
 	}
 
 	@media (min-width: 620px) {
-		padding: 0.25em;
+		padding: 0.3em;
 		text-align: center;
 	}
 }
 
 th {
-	padding: 0.25em;
+	padding: 0.3em;
 	font: 900 1em/1.2 $fnt__heading;
 
 	&[scope=row] {
 		text-align: right;
 	}
+}
+
+tr {
+	border-top: 1px solid $clr__black;
 }
