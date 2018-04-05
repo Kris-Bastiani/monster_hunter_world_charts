@@ -5,18 +5,9 @@ table {
 	font: normal 0.875em/1.4 $fnt__body;
 }
 
-th,
-td {
-	border: 1px solid $clr__black;
-}
-
+td,
 th {
-	padding: 0.25em;
-	font: 900 1em/1.2 $fnt__heading;
-
-	&[scope=row] {
-		text-align: right;
-	}
+	border: 1px solid $clr__black;
 }
 
 td {
@@ -28,5 +19,14 @@ td {
 	@media (min-width: 620px) {
 		padding: 0.25em;
 		text-align: center;
+	}
+}
+
+th {
+	padding: 0.25em;
+	font: 900 1em/1.2 $fnt__heading;
+
+	&[scope=row] {
+		text-align: right;
 	}
 }
