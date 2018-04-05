@@ -9,15 +9,11 @@ const tableHeaderProps = {
 	values: Object.keys(monsters[0].weaknesses)
 };
 
-const tableBodyProps = {
-	rows: monsters
-};
-
 ReactDOM.render(
 	(
 		<Container
 			tableHeaderProps={tableHeaderProps}
-			tableBodyProps={tableBodyProps}
+			tableRows={monsters}
 		/>
 	),
 	document.getElementById('app')
