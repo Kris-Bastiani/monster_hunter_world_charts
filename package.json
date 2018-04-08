@@ -7,7 +7,10 @@
 	"license": "ISC",
 	"private": false,
 	"scripts": {
-		"build:prod": "NODE_ENV=production gulp build"
+		"build:prod": "NODE_ENV=production gulp build",
+		"co:prod": "git checkout production",
+		"deploy": "yarn build:prod && yarn publish:prod",
+		"publish:prod": "surge --project ./dist --domain mhw-helper.surge.sh"
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.0",
