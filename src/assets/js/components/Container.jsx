@@ -45,8 +45,13 @@ export default class Container extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<TextInput label='Filter: ' changeHandler={this.search} />
-				<p>{this.state.search}</p>
+				<div className='toolbar'>
+					<TextInput
+						className='filter'
+						label='Filter:'
+						changeHandler={this.search}
+					/>
+				</div>
 				<Table
 					tableHeaderProps={this.props.tableHeaderProps}
 					tableBodyProps={{ rows: this.state.filteredRows}}

@@ -7,7 +7,7 @@ export default class TextInput extends React.Component {
 
 	render() {
 		return (
-			<label>
+			<label className={this.props.className}>
 				<span>{this.props.label}</span>
 				<input type='text' onChange={this.props.changeHandler} />
 			</label>

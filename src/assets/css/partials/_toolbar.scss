@@ -1,0 +1,26 @@
+.toolbar {
+	display: flex;
+	margin: 1em auto;
+	width: calc(100% - 2em);
+}
+
+.filter {
+	display: block;
+	margin: 0 0 0 auto;
+	max-width: 280px;
+
+	span {
+		margin: 0 0.5em 0 0;
+		font: 900 1em/1.2 $fnt__heading;
+		vertical-align: baseline;
+	}
+
+	input {
+		border: 0;
+		border-bottom: 1px solid $clr__black;
+		background: transparent;
+		appearance: none;
+		font: normal 0.875em/1.4 $fnt__body;
+		color: $clr__black;
+	}
+}
