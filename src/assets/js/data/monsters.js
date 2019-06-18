@@ -1,5 +1,21 @@
 module.exports = [
 	{
+		name: 'Ancient Leshen',
+		fieldGuide: null,
+		weaknesses: {
+			'Fire': 3,
+			'Water': 0,
+			'Thunder': 2,
+			'Ice': 1,
+			'Dragon': 2,
+			'Poison': 2,
+			'Sleep': 0,
+			'Paralysis': 1,
+			'Blast': 1,
+			'Stun': 1
+		}
+	},
+	{
 		name: 'Anjanath',
 		fieldGuide: 6,
 		weaknesses: {
@@ -77,6 +93,22 @@ module.exports = [
 			'Paralysis': 2,
 			'Blast':     1,
 			'Stun':      1
+		}
+	},
+	{
+		name: 'Behemoth',
+		fieldGuide: null,
+		weaknesses: {
+			'Fire': 1,
+			'Water': 2,
+			'Thunder': 1,
+			'Ice': 2,
+			'Dragon': 3,
+			'Poison': 2,
+			'Sleep': 2,
+			'Paralysis': 2,
+			'Blast': 2,
+			'Stun': 2
 		}
 	},
 	{
@@ -240,6 +272,38 @@ module.exports = [
 		}
 	},
 	{
+		name: 'Kulve Taroth',
+		fieldGuide: null,
+		weaknesses: {
+			'Fire': 0,
+			'Water': 2,
+			'Thunder': 0,
+			'Ice': 3,
+			'Dragon': 2,
+			'Poison': 1,
+			'Sleep': 1,
+			'Paralysis': 1,
+			'Blast': 1,
+			'Stun': 1
+		}
+	},
+	{
+		name: 'Kulve Taroth (Gold plated)',
+		fieldGuide: null,
+		weaknesses: {
+			'Fire': 1,
+			'Water': 2,
+			'Thunder': 3,
+			'Ice': 0,
+			'Dragon': 1,
+			'Poison': 1,
+			'Sleep': 1,
+			'Paralysis': 1,
+			'Blast': 1,
+			'Stun': 1
+		}
+	},
+	{
 		name: 'Kushala Daora',
 		fieldGuide: 28,
 		weaknesses: {
@@ -301,6 +365,38 @@ module.exports = [
 			'Paralysis': 2,
 			'Blast':     2,
 			'Stun':      2
+		}
+	},
+	{
+		name: 'Leshen',
+		fieldGuide: null,
+		weaknesses: {
+			'Fire': 3,
+			'Water': 0,
+			'Thunder': 2,
+			'Ice': 1,
+			'Dragon': 2,
+			'Poison': 3,
+			'Sleep': 0,
+			'Paralysis': 2,
+			'Blast': 2,
+			'Stun': 1
+		}
+	},
+	{
+		name: 'Lunastra',
+		fieldGuide: null,
+		weaknesses: {
+			'Fire': 0,
+			'Water': 1,
+			'Thunder': 1,
+			'Ice': 3,
+			'Dragon': 2,
+			'Poison': 1,
+			'Sleep': 1,
+			'Paralysis': 1,
+			'Blast': 2,
+			'Stun': 2
 		}
 	},
 	{
