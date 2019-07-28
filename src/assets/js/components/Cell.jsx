@@ -1,15 +1,9 @@
-import React from 'react';
+import { h, Component } from 'preact';
 
-module.exports = class Cell extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		return (
-			<td className={this.props.className} title={this.props.title}>
-				{this.props.value}
-			</td>
-		);
+export default class Cell extends Component {
+	render(props) {
+		return <td class={props.class} title={props.title}>
+			{props.value}
+		</td>;
 	}
 }

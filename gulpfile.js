@@ -1,119 +1,25 @@
-// ================================================== VARIABLES
+const gulp = require('gulp');
 
-const NODE_ENV = process.env.NODE_ENV || 'development';
+gulp.task('build', require('./lib/tasks/build'));
+gulp.task('clean', require('./lib/tasks/clean'));
+gulp.task('connect', require('./lib/tasks/connect'));
+gulp.task('fonts', require('./lib/tasks/fonts'));
+gulp.task('images', require('./lib/tasks/images'));
+gulp.task('pug', require('./lib/tasks/pug'));
+gulp.task('sass', require('./lib/tasks/sass'));
+gulp.task('watch', require('./lib/tasks/watch'));
+gulp.task('webpack', require('./lib/tasks/webpack'));
 
-const autoprefixer = require('gulp-autoprefixer'),
-	connect = require('gulp-connect'),
-	gulp = require('gulp'),
-	imagemin = require('gulp-imagemin'),
-	pug = require('gulp-pug'),
-	pump = require('pump'),
-	rename = require('gulp-rename'),
-	sass = require('gulp-sass'),
-	through2 = require('through2'),
-	webpack = require('webpack'),
-	webpackConfig = require('./webpack.config.js'),
-	webpackStream = require('webpack-stream');
-
-const pug_locals = {
-	$meta: {
-		title: 'Title',
-		desc: 'Description'
-	}
-};
-
-
-// ================================================== COMPILE TASKS
-
-gulp.task('fonts', cb => {
-	pump([
-		gulp.src('./src/assets/fonts/**/*'),
-		gulp.dest('./dist/assets/fonts'),
-		connect.reload()
-	], cb);
-});
-
-gulp.task('images', cb => {
-	pump([
-		gulp.src('./src/assets/images/**/*'),
-		imagemin(),
-		gulp.dest('./dist/assets/images'),
-		connect.reload()
-	], cb);
-});
-
-gulp.task('pug', cb => {
-	pump([
-		gulp.src('./src/**/[!_]*.pug'),
-		pug({
-			locals: pug_locals
-		}),
-		gulp.dest('./dist'),
-		connect.reload()
-	], cb);
-});
-
-gulp.task('sass', cb => {
-	pump([
-		gulp.src('./src/assets/css/**/[!_]*.scss'),
-		sass({
-			outputStyle: 'compressed'
-		}),
-		autoprefixer({
-			browsers: [
-				'last 2 versions',
-				'ie >= 9'
-			],
-			cascade: false
-		}),
-		rename({
-			suffix: '.min',
-			extname: '.css'
-		}),
-		gulp.dest('./dist/assets/css'),
-		connect.reload()
-	], cb);
-});
-
-// NOTE: It seems gulp src here, while required for this to work, does nothing as webpack's entry points are used.
-gulp.task('webpack', cb => {
-	pump([
-		gulp.src('./src/assets/js/**/app.js'),
-		webpackStream(webpackConfig, webpack),
-		gulp.dest('./dist'),
-		connect.reload()
-	], cb);
-});
-
-
-// ================================================== PROCESS TASKS
-
-gulp.task('connect', () => {
-	connect.server({
-		livereload: true,
-		port: 3000,
-		root: 'dist'
-	});
-});
-
-gulp.task('build', [
+gulp.task('transpile', [
 	'fonts',
 	'images',
 	'pug',
 	'sass',
-	'webpack'
+	'webpack',
 ]);
-
-gulp.task('watch', () => {
-	gulp.watch(['./src/assets/fonts/**/*'], ['fonts']);
-	gulp.watch(['./src/assets/images/**/*'], ['images']);
-	gulp.watch(['./src/**/*.pug'], ['pug']);
-	gulp.watch(['./src/assets/css/**/*'], ['sass']);
-	gulp.watch(['./src/assets/js/**/*'], ['webpack']);
-});
 
 gulp.task('default', [
 	'build',
 	'watch',
-	'connect'
+	'connect',
 ]);

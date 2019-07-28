@@ -1,9 +1,11 @@
 @charset 'utf-8';
-
-@import 'partials/vars';
-@import 'partials/mixins';
-@import 'partials/base';
-@import 'partials/typography';
-@import 'partials/table';
-@import 'partials/toolbar';
-@import 'partials/rating';
+// ================================================== DEFINITIONS
+@import 'variables';
+// ================================================== BASE
+@import 'base/root';
+@import 'base/tables';
+// ================================================== COMPONENTS
+@import 'components/rating';
+@import 'components/toolbar';
+// ================================================== UTILITIES
+@import 'utilities/text_alignment';

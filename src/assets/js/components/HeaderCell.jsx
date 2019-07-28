@@ -1,19 +1,11 @@
-import React from 'react';
+import { h, Component } from 'preact';
 
-export default class HeaderCell extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		return (
-			<th className={this.props.className} scope={this.props.scope}>
-				{this.props.value}
-			</th>
-		);
+export default class HeaderCell extends Component {
+	render(props) {
+		return <th class={props.class} scope={props.scope}>
+			{props.value}
+		</th>;
 	}
 }
 
-HeaderCell.defaultProps = {
-	scope: 'col'
-};
+HeaderCell.defaultProps = { scope: 'col' };

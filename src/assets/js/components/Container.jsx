@@ -1,50 +1,42 @@
-import React from 'react';
-import Table from './Table.jsx';
+import { h, Component } from 'preact';
+import DataTable from './DataTable.jsx';
 import TextInput from './TextInput.jsx';
-import throttle from '../services/throttle';
+import throttle from '../helpers/throttle';
 
-export default class Container extends React.Component {
-	constructor(props) {
-		super(props);
+export default class Cell extends Component {
+	constructor() {
+		super();
 		this.state = {
-			filteredRows: this.props.tableRows,
-			w: window.innerWidth
+			filteredRows: [],
+			w: window.innerWidth,
 		};
 		this.checkWidth = this.checkWidth.bind(this);
 		this.search = this.search.bind(this);
 	}
 
-	checkWidth(e) {
-		const cb = e => {
-			this.setState({ w: window.innerWidth });
-		};
-
-		return throttle(cb(e), 300);
-	}
+	checkWidth() { return throttle(() => this.setState({ w: window.innerWidth })); }
 
 	componentDidMount() {
-		window.addEventListener('resize', e => {
-			this.checkWidth(e);
+		this.setState({
+			filteredRows: this.props.tableRows,
+			w: window.innerWidth,
 		});
+
+		window.addEventListener('resize', e => this.checkWidth(e));
 	}
 
-	componentWillUnmount() {
-		window.removeEventListener('resize', e => {
-			this.checkWidth(e);
-		});
-	}
+	componentWillUnmount() { window.removeEventListener('resize', e => this.checkWidth(e)); }
 
 	search(e) {
 		const query = e.target.value.toLowerCase();
-		const filteredRows = this.props.tableRows.filter(row => {
-			return row.name.toLowerCase().indexOf(query) !== -1;
+		this.setState({
+			filteredRows: this.props.tableRows.filter(row => row.name.toLowerCase().indexOf(query) !== -1),
 		});
-		this.setState({ filteredRows: filteredRows });
 	}
 
 	render() {
 		return (
-			<React.Fragment>
+			<div>
 				<div className='toolbar'>
 					<TextInput
 						className='filter'
@@ -52,12 +44,12 @@ export default class Container extends React.Component {
 						changeHandler={this.search}
 					/>
 				</div>
-				<Table
+				<DataTable
 					tableHeaderProps={this.props.tableHeaderProps}
-					tableBodyProps={{ rows: this.state.filteredRows}}
+					tableBodyProps={{ rows: this.state.filteredRows }}
 					w={this.state.w}
 				/>
-			</React.Fragment>
+			</div>
 		);
 	}
 }

@@ -1,12 +1,7 @@
-// ================================================== PATHS
-
-$pth__img: '../images/';
-
-
 // ================================================== COLORS
 
-$clr__black: #6A2E14;
-$clr__white: #F4DFB8;
+$clr__black:    #6A2E14;
+$clr__white:    #F4DFB8;
 
 $clr__rating_0: #EC7640;
 $clr__rating_1: #ECCC40;
@@ -16,7 +11,10 @@ $clr__rating_3: #8EAFED;
 
 // ================================================== FONTS
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
-
 $fnt__heading: 'Playfair Display', serif;
-$fnt__body: Arial, Helvetica, sans-serif;
+$fnt__body: arial, helvetica, sans-serif;
+
+
+// ================================================== PATHS
+
+$pth__img: '/assets/images/';

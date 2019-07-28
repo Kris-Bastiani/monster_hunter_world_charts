@@ -1,42 +1,43 @@
 {
-	"name": "boiler__gulp_webpack",
-	"version": "1.0.0",
-	"description": "Project boilerplate using Gulp and Webpack.",
+	"name": "monster_hunter_world_charts",
+	"version": "2.0.0",
+	"description": "A small project for fun using monster weakness info from 'Monster Hunter World' to play with some basic data presentation.",
 	"main": "gulpfile.js",
 	"author": "Kris Bastiani",
 	"license": "ISC",
 	"private": false,
 	"scripts": {
-		"build:prod": "NODE_ENV=production gulp build",
-		"co:prod": "git checkout production",
-		"deploy": "yarn build:prod && yarn publish:prod",
-		"publish:prod": "surge --project ./dist --domain mhw-helper.surge.sh"
+		"build:prod": "NODE_ENV=production gulp build"
+	},
+	"dependencies": {
+		"preact": "^8.4.2"
 	},
 	"devDependencies": {
-		"babel-core": "^6.26.0",
-		"babel-loader": "^7.1.2",
-		"babel-plugin-transform-react-remove-prop-types": "^0.4.9",
-		"babel-polyfill": "^6.26.0",
-		"babel-preset-env": "^1.6.0",
-		"babel-preset-react": "^6.24.1",
-		"git-scripts": "^0.2.1",
+		"@babel/core": "^7.1.0",
+		"@babel/plugin-transform-object-assign": "^7.2.0",
+		"@babel/plugin-transform-react-jsx": "^7.3.0",
+		"@babel/polyfill": "^7.0.0",
+		"@babel/preset-env": "^7.1.0",
+		"@babel/register": "^7.4.4",
+		"babel-loader": "^8.0.2",
+		"del": "^3.0.0",
+		"eslint": "^4.19.1",
+		"eslint-config-airbnb-base": "^12.1.0",
+		"eslint-plugin-import": "^2.11.0",
+		"eslint-plugin-react": "^7.14.2",
 		"gulp": "^3.9.1",
 		"gulp-autoprefixer": "^4.0.0",
 		"gulp-connect": "^5.0.0",
-		"gulp-imagemin": "^3.3.0",
+		"gulp-htmlmin": "^4.0.0",
+		"gulp-imagemin": "^4.1.0",
 		"gulp-pug": "^3.3.0",
-		"gulp-rename": "^1.2.2",
 		"gulp-sass": "^3.1.0",
 		"pump": "^1.0.2",
-		"surge": "^0.20.1",
-		"through2": "^2.0.3",
-		"uglifyjs-webpack-plugin": "^1.2.3",
-		"webpack": "3.11.0",
-		"webpack-clear-console": "^1.0.3",
+		"run-sequence": "^2.2.1",
+		"stylelint": "^9.10.1",
+		"stylelint-config-recommended": "^2.1.0",
+		"uglifyjs-webpack-plugin": "^2.0.1",
+		"webpack": "^4.0.0",
 		"webpack-stream": "^4.0.0"
-	},
-	"dependencies": {
-		"react": "^16.2.0",
-		"react-dom": "^16.2.0"
 	}
 }

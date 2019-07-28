@@ -2,20 +2,16 @@ table {
 	margin: 1em auto;
 	border-collapse: collapse;
 	width: calc(100% - 2em);
-	font: normal 0.875em/1.4 $fnt__body;
+	font: normal 1em/1.4 $fnt__body;
 }
 
 tbody {
-	tr {
-		border-top: 1px solid $clr__black;
-	}
+	tr { border-top: 1px solid $clr__black; }
 }
 
 td,
 th {
-	&:first-child {
-		border-right: 1px solid $clr__black;
-	}
+	&:first-child { border-right: 1px solid $clr__black; }
 }
 
 td {
@@ -34,7 +30,5 @@ th {
 	padding: 0.3em;
 	font: 900 1em/1.2 $fnt__heading;
 
-	&[scope=row] {
-		text-align: right;
-	}
+	&[scope=row] { text-align: right; }
 }

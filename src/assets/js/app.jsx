@@ -1,20 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { h, render, Component } from 'preact';
 import Container from './components/Container.jsx';
 import monsters from './data/monsters';
 
 const tableHeaderProps = {
 	title: 'Monsters',
 	summary: 'Weaknesses',
-	values: Object.keys(monsters[0].weaknesses)
+	values: Object.keys(monsters[0].weaknesses),
 };
 
-ReactDOM.render(
-	(
-		<Container
+class App extends Component {
+	render() {
+		return <Container
 			tableHeaderProps={tableHeaderProps}
 			tableRows={monsters}
-		/>
-	),
-	document.getElementById('app')
-);
+		/>;
+	}
+}
+
+render(<App />, document.getElementById('js__app'));

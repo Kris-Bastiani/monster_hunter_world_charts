@@ -1,6 +1,8 @@
-# Gulp + Webpack Boilerplate
+# Monster Hunter World Weakness Chart
 
-A build setup that uses Webpack to compile JS using Babel and React, and uses Gulp to minify images using imagemin, compile HTML from Pug and compile CSS from Sass.
+A small project for fun using monster weakness info from 'Monster Hunter World' to play with some basic data presentation.
+
+Based off the `OrchidAugur/boiler__gulp_webpack` boilerplate.
 
 ## Getting Started
 

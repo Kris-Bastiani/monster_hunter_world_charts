@@ -1,15 +1,11 @@
-import React from 'react';
+import { h, Component } from 'preact';
 
-export default class TextInput extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
+export default class TextInput extends Component {
+	render(props) {
 		return (
-			<label className={this.props.className}>
-				<span>{this.props.label}</span>
-				<input type='text' onChange={this.props.changeHandler} />
+			<label className={props.className}>
+				<span>{props.label}</span>
+				<input type='text' onInput={props.changeHandler} />
 			</label>
 		);
 	}
